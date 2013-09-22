@@ -67,7 +67,9 @@ module Bayes
     ### Helpers ===================================================
 
     def self.to_csv(results, name: "examples")
-      CSV.open("tmp/bayes_test/#{name}.csv", "w+") do |csv|
+      `mkdir -p spec/reports`
+
+      CSV.open("spec/reports/#{name}.csv", "w+") do |csv|
         csv << results.first.keys
         results.each do |r|
           csv << r.values

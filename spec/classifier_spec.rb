@@ -165,7 +165,7 @@ describe Bayes::Classifier do
       subject.flush
     end
 
-    # Bayes::Stats.to_csv(results, name: "examples")
+    Bayes::Stats.to_csv(results, name: "examples")
 
     results.last[:f_score].should > results.first[:f_score]
   end
@@ -184,7 +184,7 @@ describe Bayes::Classifier do
       subject.flush
     end
 
-    # Bayes::Stats.to_csv(results, name: "weights")
+    Bayes::Stats.to_csv(results, name: "weights")
 
     results.last[:recall].should > results.first[:recall]
   end
