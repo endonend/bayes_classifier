@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bayes_classifier (0.0.1)
+    bayes_classifier (0.0.1.1)
 
 GEM
   remote: https://rubygems.org/
