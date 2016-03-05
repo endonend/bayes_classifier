@@ -4,7 +4,7 @@ class String
   def word_hash
     split_words.each_with_object({}) do |word, hash|
       word.downcase!
-      if !word.stopword? && word.length > 2
+      if !word.stopword?
         hash[word] ||= 0
         hash[word] += 1
       end
