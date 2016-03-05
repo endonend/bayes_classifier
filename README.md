@@ -2,12 +2,14 @@
 
 Bayes::Classifier allows you to classify strings with naive Bayes classifier.
 
+Note: This gem is a forked version of DarthSim's original gem to improve series and issue number matching for a project I am working on. The original had a word character minimum, which ignored numbers below 100.
+
 ## Installation
 
 Just add the following line to your `Gemfile`:
 
 ```ruby
-gem 'bayes_classifier'
+gem 'bayes_classifier' , :git => "git://github.com/endonend/bayes_classifier.git"
 ```
 
 Then run 'bundle install'.
